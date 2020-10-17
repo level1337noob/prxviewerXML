@@ -1,4 +1,4 @@
-# prxviewer
+# prxviewerXML
 [+] Tool for viewing PRX variables/functions file names and module names on a terminal or any view you may want to modify
 
 You can also use it on other firmware versions of libdoc from 1.x to 6.x
