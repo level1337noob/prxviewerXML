@@ -165,14 +165,14 @@ bool findTypeByName(const std::string& name) {
     for (const auto& lib : x.library) {
       for (const auto& f : lib.functions) {
         if (f.name == name) {
-          printf("Function: %s, NID: %s\n", f.name.c_str(), f.nid.c_str());
+          printf("Function: %s, NID: %s ; referenced in library %s, file %s\n", f.name.c_str(), f.nid.c_str(), lib.name.c_str(), x.prx.c_str());
           return true;
         }
       }
 
       for (const auto& f : lib.variables) {
         if (f.name == name) {
-          printf("Variable: %s, NID: %s\n", f.name.c_str(), f.nid.c_str());
+          printf("Variable: %s, NID: %s ; referenced in library %s, file %s\n", f.name.c_str(), f.nid.c_str(), lib.name.c_str(), x.prx.c_str());
           return true;
         }
       }
